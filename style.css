@@ -69,6 +69,7 @@ body > :not(nav) {
     /* Titles */
     
     h2 {
+      font-family: 'Dancing Script', cursive; /* Use Dancing Script font */
       text-align: justify;
       font-size: 50px;
       text-align: center;
@@ -78,7 +79,16 @@ body > :not(nav) {
       margin-left: 60px;
       margin-top: 40px;
       margin-bottom: 0px;
-    }
+      transition: text-shadow 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  h2:hover {
+      color: #ffffff; /* Change text color to white on hover */
+      text-shadow: 0 0 10px rgba(211, 211, 211, 0.8),  /* Light gray shadow */
+                   0 0 20px rgba(192, 192, 192, 0.7),  /* Medium gray shadow */
+                   0 0 30px rgba(169, 169, 169, 0.6),  /* Darker gray shadow */
+                   0 0 40px rgba(128, 128, 128, 0.5);  /* Even darker gray shadow */
+  }
     
     .introduction {
       text-align: justify;
@@ -106,22 +116,41 @@ body > :not(nav) {
     
     
     #about-me h1 {
-    font-family: Casual;
+      font-family: 'Dancing Script', cursive; /* Use Dancing Script font */
       font-size: 60px;
       margin-top: 60px;
       margin-left: 90px;
-      color: rgb(128, 128, 128);
-    
-    }
-    
-    #about-me p {
-    font-family: Casual;
-      font-size: 25px;
-      color: rgb(128, 128, 128);
-      margin-top: -1cm;
-      margin-top: 60px;
-      margin-left: 90px;
-    }
+      color: rgb(128, 128, 128); /* Gray color for the text */
+      transition: text-shadow 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  #about-me h1:hover {
+      color: #ffffff; /* Change text color to white on hover */
+      text-shadow: 0 0 10px rgba(211, 211, 211, 0.8),  /* Light gray shadow */
+                   0 0 20px rgba(192, 192, 192, 0.7),  /* Medium gray shadow */
+                   0 0 30px rgba(169, 169, 169, 0.6),  /* Darker gray shadow */
+                   0 0 40px rgba(128, 128, 128, 0.5);  /* Even darker gray shadow */
+  }
+  
+
+
+  #about-me p {
+    font-family: 'Dancing Script', cursive; /* Use Dancing Script font */
+    font-size: 25px;
+    color: rgb(128, 128, 128); /* Initial gray color for the text */
+    margin-top: 60px;
+    margin-left: 90px;
+    transition: text-shadow 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#about-me p:hover {
+    color: #ffffff; /* Change text color to white on hover */
+    text-shadow: 0 0 10px rgba(211, 211, 211, 0.8),  /* Light gray shadow */
+                 0 0 20px rgba(192, 192, 192, 0.7),  /* Medium gray shadow */
+                 0 0 30px rgba(169, 169, 169, 0.6),  /* Darker gray shadow */
+                 0 0 40px rgba(128, 128, 128, 0.5);  /* Even darker gray shadow */
+}
+
     
     .profile_image {
       width: 550px;
@@ -155,7 +184,7 @@ html {
   scroll-margin-top: -100px; /* Adjust this value to suit your needs */
 }
   .photo {
-    border: 1px solid gray;
+    border: 1px solid silver;
     display: block;
     border-radius: 6px;
     text-align: center;
@@ -164,7 +193,6 @@ html {
     width: 2in;
     font-size: 20px;
     box-shadow: 0 3px 10px gray;
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   /* Add this to your style.css */
@@ -183,6 +211,7 @@ html {
   
   .gallery h6 {
     align-items: center;
+    font-family: dancing script;
     font-size: 20px;
     margin-block-start: 8px;
     margin-block-end: 5px;
@@ -191,6 +220,7 @@ html {
   
   .gallery p {
     align-items: center;
+    font-family: dancing script;
     font-size: 15px;
     color: gray;
     margin-block-start: 5px;
@@ -237,11 +267,13 @@ html {
     }
     
     .project-card h3 {
+      font-family: dancing script;
       font-size: 25px;
       margin-left: 30px;
     }
     
     .project-card li {
+      font-family: dancing script;
       font-size: 20px;
       margin-left: 30px;
     }
@@ -479,11 +511,13 @@ body {
 
 /* Optional: Styling for text inside the box */
 .box h3 {
+  font-family: dancing script;
   margin-top: 0; /* Remove top margin for a tighter layout */
   color: #333; /* Title color */
 }
 
 .box p {
+  font-family: dancing script;
   color: #666; /* Paragraph text color */
 }
 /* Image styling */
@@ -492,4 +526,17 @@ body {
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Cover the box without distorting the image */
   border-radius: 8px; /* Optional: round corners of the image */
+}
+.image-container {
+  width: 100%; /* Make the container take the full width of its parent */
+  max-width: 100%; /* Prevent the image from overflowing the container */
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden; /* Hide any overflowing parts of the image */
+}
+
+.image-container img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+  border-color: gold
 }
