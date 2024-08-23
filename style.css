@@ -1,0 +1,403 @@
+/* Add this to your style.css */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      font-family: Playfair Display, serif;
+    }
+    
+    /* Navigation Bar */
+    
+    #home {
+      background-color: lightgray;
+      padding-bottom: 1cm;
+      margin-left:-1cm;
+      margin-right:-1cm;
+      margin-top:-1cm;
+      padding-top: 2cm;
+      padding-bottom: 2cm;
+      height: 5mm;
+     }
+    
+    .topmenu {
+      color: white;
+      margin: 10px;
+      padding: 20px;
+      font-size: 20px;
+      text-decoration:none;
+    }
+    
+    .topmenu:hover {
+      color: white;
+      font-weight:100px;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+    
+    .topdiv {
+      float: right;
+      padding-right: 1cm;
+    }
+    
+    .profile_name {
+      float: left;
+      padding-left: 2cm;
+      color: white;
+      font-size: 30px;
+    }
+    
+    .profile_name .contact_info {
+      font-size: 15px;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+    
+    .contact_info img {
+      width:25px;
+      margin-right: 10px;
+      float:left;
+    }
+    
+    /* Titles */
+    
+    h2 {
+      text-align: justify;
+      font-size: 50px;
+      text-align: center;
+      float: left;
+      color: silver;
+      margin: 30px;
+      margin-left: 60px;
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+    
+    .introduction {
+      text-align: justify;
+      font-size: 30px;
+      text-align: center;
+      float: left;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      animation-duration: 5s;
+      position: relative;
+    }
+    
+    /* Used in the About Me sections */
+    
+    .container {
+      display: flex;
+    }
+    
+    /* About Me */
+    
+    .about-me {
+      display: flex;
+      align-items: center;
+    }
+    
+    #about-me h1 {
+    font-family: Casual;
+      font-size: 60px;
+      margin-top: 60px;
+      margin-left: 90px;
+      color: rgb(128, 128, 128);
+    
+    }
+    
+    #about-me p {
+    font-family: Casual;
+      font-size: 25px;
+      color: rgb(128, 128, 128);
+      margin-top: -1cm;
+      margin-top: 60px;
+      margin-left: 90px;
+    }
+    
+    .profile_image {
+      width: 550px;
+      height: fit-content;
+      vertical-align: middle;
+      margin: 5px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      
+    }
+ /* Gallery */
+    
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  
+  .photo {
+    border: 1px solid gray;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    box-shadow: 0 3px 10px gray;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  /* Add this to your style.css */
+
+.photo:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .photo img {
+    height: 100px;
+    align-items: center;
+    
+  }
+  
+  .gallery h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-block-start: 8px;
+    margin-block-end: 5px;
+    font-weight: bold;
+  } 
+  
+  .gallery p {
+    align-items: center;
+    font-size: 15px;
+    color: gray;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  } 
+  
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+    
+    /* Projects */
+    
+    .projects-container {
+      margin-top: 30px;
+      margin-left: 60px;
+      font-family: Playfair Display, serif;
+      color: silver;
+    }
+    
+    .projects-container hr {
+      border: 1px solid lightgray;
+      width: 75%;
+      margin-left: 5cm;
+    }
+    
+    .project-card {
+      margin: 0 15px 15px 30px;
+      padding-bottom: 5px;
+    }
+    
+    .project-card h3 {
+      font-size: 25px;
+      margin-left: 30px;
+    }
+    
+    .project-card li {
+      font-size: 20px;
+      margin-left: 30px;
+    }
+    
+    /* Recommendations */
+    
+    .all_recommendations {
+      display: flex;
+      align-items: center;
+      margin-left: 1in;
+      flex-direction: row;
+      flex-flow: wrap;
+      padding: 20px;
+    }
+    
+    .recommendation {
+      font-style: italic;
+      text-align: left;
+      width: 21.875rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 11px;
+      box-shadow: 0 3px 10px var(--primary-shadow);
+      padding: 20px;
+      margin: 10px;
+      border:1px solid gray;
+      font-size: 18px;
+      height:150px
+    }
+    
+    .recommendation span {
+      color: #7600bc;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    /* Scroll to Top Button */
+    
+    .iconbutton{
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background-color: silver;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      right: 3%;
+      bottom: 3%;
+      cursor: pointer;
+    }
+    
+    /* Form Pop-up */
+    
+    .popup {
+      width:400px;
+      background-color: #e8bcf0;
+      border-radius: 3mm;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      position: fixed;
+      /* padding: 30px; */
+      visibility: hidden;
+    }
+    
+    .popup img {
+      padding-top: 20px;
+    }
+    
+    .popup button {
+      background-color: #fff;
+      border: 1px solid silver;
+      color: silver;
+      display: block;
+      border-radius: 6px;
+      text-align: center;
+      margin: 50px;
+      padding: 10px;
+      width: 2in;
+      font-size: 20px;
+      margin-left: 25%;
+    }
+    
+    .popup button:hover {
+      background-color: #fff;
+      border: 2px solid silver;
+      color: silver;
+      display: block;
+      font-weight: bolder;
+      text-align: center;
+      cursor: pointer;
+      margin-left: 25%;
+    }
+    
+    /* Recommendation Form */
+    
+    input, textarea {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+      margin: 10px;  
+      width:100%;
+    }
+    
+    fieldset {
+      display: flexbox;
+      align-content: center;
+      justify-content: center;  
+      padding: 25px; 
+      margin-left: 50px; 
+      margin-right: 50px;   
+      border: thin solid white;
+      width: 50%;
+    }
+    
+    /* Buttons */
+    
+    button {
+      background-color: #fff;
+      border: 1px solid silver;
+      color: silver;
+      display: block;
+      border-radius: 6px;
+      text-align: center;
+      margin: 50px;
+      padding: 10px;
+      width: 2in;
+      font-size: 20px;
+    }
+    
+    button:hover {
+      background-color: silver;
+      border: 1px solid silver; 
+      color: #fff;
+      display: block;
+      border-radius: 6px;
+      text-align: center;
+      cursor: pointer;
+    }
+ 
+
+
+/* image popup event binder max */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.photo img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    margin-top: 10px;;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border: 5px solid #fff; /* Border around the image */
+    border-radius: 10px; /* Optional: rounded corners for the border */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
