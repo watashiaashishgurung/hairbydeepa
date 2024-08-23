@@ -18,7 +18,7 @@ html {
       padding-top: 2cm;
       padding-bottom: 2cm;
       height: 5mm;
-     }
+    }
     
     .topmenu {
       color: white;
@@ -60,6 +60,11 @@ html {
       margin-right: 10px;
       float:left;
     }
+
+        /* Ensuring no content overlap with the fixed nav bar */
+body > :not(nav) {
+  padding-top: 100px; /* Adjust this value based on the height of your nav bar */
+}
     
     /* Titles */
     
@@ -99,6 +104,7 @@ html {
       align-items: center;
     }
     
+    
     #about-me h1 {
     font-family: Casual;
       font-size: 60px;
@@ -126,14 +132,28 @@ html {
       transform: scaleX(-1);
       
     }
+
+
+
+
+
+
  /* Gallery */
     
 .gallery {
-    display: flex;
+    display:flex;
     flex-direction: row;
     flex-flow: wrap;
   }
-  
+/* Smooth scrolling behavior for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Specific rule for the gallery section when targeted */
+#gallery:target {
+  scroll-margin-top: -100px; /* Adjust this value to suit your needs */
+}
   .photo {
     border: 1px solid gray;
     display: block;
@@ -184,8 +204,20 @@ html {
   }
   
     
+
+
+
+
     /* Projects */
-    
+    /* Smooth scrolling behavior for all anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Specific rule for the gallery section when targeted */
+#projects:target {
+    scroll-margin-top: -100px; /* Adjust this value to suit your needs */
+}
     .projects-container {
       margin-top: 30px;
       margin-left: 60px;
@@ -305,9 +337,21 @@ html {
       cursor: pointer;
       margin-left: 25%;
     }
+   
     
+
     /* Recommendation Form */
-    
+        /* Smooth scrolling behavior for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Specific rule for the gallery section when targeted */
+#recommendations:target {
+  scroll-margin-top: -100px; /* Adjust this value to suit your needs */
+}    
+
+
     input, textarea {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
       margin: 10px;  
@@ -400,4 +444,52 @@ body {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Project Boxes
+
+/* General styling for the box */
+.box {
+  border: 2px solid #333; /* Border color and thickness */
+  padding: 20px; /* Space inside the box, around the content */
+  margin: 20px; /* Space outside the box, separating it from other elements */
+  background-color: #f9f9f9; /* Background color of the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for 3D appearance */
+  text-align: center; /* Center align text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 2s ease forwards; /* Apply animation */
+}
+
+/* Animation on hover */
+.box:hover {
+  transform: scale(1.1); /* Scale the box up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow */
+}
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start fully transparent */
+  }
+  to {
+      opacity: 1; /* End fully opaque */
+  }
+}
+
+/* Optional: Styling for text inside the box */
+.box h3 {
+  margin-top: 0; /* Remove top margin for a tighter layout */
+  color: #333; /* Title color */
+}
+
+.box p {
+  color: #666; /* Paragraph text color */
+}
+/* Image styling */
+.box-image {
+  width: 100%; /* Ensure the image fills the box width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the box without distorting the image */
+  border-radius: 8px; /* Optional: round corners of the image */
 }
